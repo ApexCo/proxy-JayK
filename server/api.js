@@ -4,7 +4,7 @@ const axios = require('axios');
 const api = express.Router();
 
 api.get('/galleries/:id', (req, res) => {
-  axios.get(`http://72.134.126.46:8080/api/galleries/${req.params.id}`)
+  axios.get(`http://13.52.246.93:8080/api/galleries/${req.params.id}`)
     .then(({data}) => res.status(200).send(data))
     .catch((err) => res.status(400).send(err));
 });
