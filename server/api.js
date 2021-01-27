@@ -16,7 +16,7 @@ api.get('/checkout/:id', (req, res) => {
 });
 
 api.get('/reviews/:id', (req, res) => {
-  axios.get(`http://localhost:8080/api/reviews/${req.params.id}`)
+  axios.get(`http://54.215.215.126:8080/api/reviews/${req.params.id}`)
     .then(({data}) => res.status(200).send(data))
     .catch((err) => res.status(400).send(err));
 });
