@@ -12,8 +12,8 @@ app.use(bodyParser.json());
 
 app.use(cors());
 
-app.get('/', (req, res) => res.redirect('/1'));
-app.use('/:id', express.static(path.join(__dirname, '../public')));
+app.get('/', express.static(path.join(__dirname, '../public')));
+app.use('/:id', express.static(path.join(__dirname, '../public/main.html')));
 app.use('/api', api);
 
 module.exports = app;
