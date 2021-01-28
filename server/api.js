@@ -22,7 +22,7 @@ api.get('/reviews/:id', (req, res) => {
 });
 
 api.get('/img_carousel/:id', (req, res) => {
-  axios.get(`http://3.101.61.202:8080/api/img_carousel/${req.params.id}`)
+  axios.get(`http://13.56.115.246:8080/api/img_carousel/${req.params.id}`)
     .then(({data}) => res.status(200).send(data))
     .catch((err) => res.status(400).send(err));
 });
