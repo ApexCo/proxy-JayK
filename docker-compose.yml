@@ -6,4 +6,3 @@ services:
    context: .
   ports:
     - 81:3000
-  #  - 80:3000
